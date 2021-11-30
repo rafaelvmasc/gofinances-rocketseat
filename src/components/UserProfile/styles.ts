@@ -1,12 +1,13 @@
+import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
   flex-direction: row;
 `;
 
-export const Image = styled.View`
-  width: 48px;
-  height: 48px;
+export const Avatar = styled.View`
+  width: ${RFValue(48)}px;
+  height: ${RFValue(48)}px;
   background-color: black;
   border-radius: 10px;
   margin-right: 18px;

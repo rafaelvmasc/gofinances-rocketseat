@@ -1,7 +1,7 @@
 import React from "react";
 
 import { View, Text } from "react-native";
-import { Container, Greeting, Image, Title, Username } from "./styles";
+import { Avatar, Container, Greeting, Title, Username } from "./styles";
 
 type UserProps = {
     title: string;
@@ -11,7 +11,7 @@ type UserProps = {
 export function UserProfile({title}: UserProps) {
   return (
     <Container>
-        <Image/>
+        <Avatar/>
       <Greeting>
         <Title>Olá,</Title>
         <Username>{title}</Username>
